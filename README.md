@@ -3,24 +3,18 @@
 # Tech Questions
 --------------
 ## What tech stack should we use and why?
-[Read This](https://svsg.co/how-to-choose-your-tech-stack/)
-1. Moble or Web 
-(Moble First)
-2. Consider the landscape of tools in your industry.
+*   Database and Model: Mongoose or Sequelize
+    - I suggest Mongoose(NoSQL) - to store User info and portfolio data, this will be very flat.  We can keep the portfolios seprate from the stock data. 
+        - I suggest Mongo for user info and portfolio becuase we do not want a predefined schema, becuase we want the user to add and remove any number of stocks at will.  We don't want a rigid structure.
+    - The data (stock prices etc.) being retrieved from an API may not need to be stored.  We will need access realtime values for buy/selling functions. We may only need stock data in realtime transactions, portfolio value calculating, and charting.
+        - We may need SQL if we want to store and chart historical data, unless we can find a plugin? If not we can use https://www.highcharts.com/products/highstock/
+        
 
-3. Who is going to build this thing?
- (We should not try to use too many new technologies as a lot of people have to collaborate.)
+*   JavaScript framework - React.JS
+    - Will need reusable components, virtual DOM, developer tools.
+        - I would like to use React becuase we will utilize a lot of forms, charts, and realtime portolio valuation functions.
 
-4. Database utilization and capabilities.
--Mongoose or Sequelize  (NoSQL????)
-    -I suggest Mongoose(NoSQL) - to store User info and portfolio data?
-    -We may need SQL if we want to store and chart historical data, unless we can find a plugin? https://www.highcharts.com/products/highstock/
-
-5. JavaScript frameworks include tools for building rich, interactive web experiences
--React - (WHY: will need reusable components, virtual DOM, developer tools)
--Angular - (Nee)
--Express - Node  - (WHY: Javascript, Javascript, Javascript!)
-
+*   -Express - Node  - (WHY: Javascript, Javascript, Javascript!) I like Javascript.
 
 ###I have friends that completed TopStepTrader Combines
 ####I looked up a job application for TopStepTrader Full-Stack Web Developer to see Requirements, for insight.
@@ -37,7 +31,7 @@
 *   Continuous integration knowledge
 
 ## What deployment options are there? What are the benefits of the deployment options?
-*   AWS will give us the best project three experience, I want to learn more about how to deploy.
+*   It may be overkill but, AWS will give us the best project three experience. Also I really want to learn more about how to deploy.
 
 ## Who are the competitors? What do they do well? What problems do they have?
 Its a little hard to define the competition since the ideas is still bit abstract.
@@ -76,6 +70,16 @@ Its a little hard to define the competition since the ideas is still bit abstrac
 *   Percentage of Volume (POV)
 *   Implementation Shortfall
 
+[Technical Inicators](https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/overview)
+ *   Simple Moving Average (SMA)
+ *   Moving Average Convergence/Divergence (MACD)
+ *   Commodity Channel Index (CCI)
+ *   Relative Strength Index (RSI)
+ *   Stochastic
+ *   Bollinger Bands
+ *   Pivot Points
+ *   PSAR
+ *   Ichimoku Kinko Hyo.
 
 # App Idea Questions
 ------------------
