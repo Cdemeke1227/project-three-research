@@ -50,7 +50,7 @@ Its a little hard to define the competition since the ideas is still bit abstrac
 *   https://www.programmableweb.com/news/96-stocks-apis-bloomberg-nasdaq-and-etrade/2013/05/22
 *   http://www.xignite.com/
 
-##vWhat industry related algorithms would we need to use?
+##  What industry related algorithms would we need to use?
 [Common Types of Trading Algorithms](https://blog.quantopian.com/common-types-of-trading-algorithms/)
 *   Mean Reversion - What goes up must come down
 *   Valuation - Bargain Shopping
