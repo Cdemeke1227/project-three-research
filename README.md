@@ -4,16 +4,26 @@
 --------------
 ## What tech stack should we use and why?
 [Read This](https://svsg.co/how-to-choose-your-tech-stack/)
+1. Moble or Web 
+(Moble First)
+2. Consider the landscape of tools in your industry.
+
+3. Who is going to build this thing?
+ (We should not try to use too many new technologies as a lot of people have to collaborate.)
+
+4. Database utilization and capabilities.
 -Mongoose or Sequelize  (NoSQL????)
     -I suggest Mongoose(NoSQL) - to store User info and portfolio data?
     -We may need SQL if we want to store and chart historical data, unless we can find a plugin? https://www.highcharts.com/products/highstock/
 
+5. JavaScript frameworks include tools for building rich, interactive web experiences
 -React - (WHY: will need reusable components, virtual DOM, developer tools)
 -Angular - (Nee)
 -Express - Node  - (WHY: Javascript, Javascript, Javascript!)
 
-I have friends that completed TopStepTrader Combines
-I looked up a job application for TopStepTrader Full-Stack Web Developer to see Requirements, for insight.
+
+###I have friends that completed TopStepTrader Combines
+####I looked up a job application for TopStepTrader Full-Stack Web Developer to see Requirements, for insight.
 *   Experience with common web-based languages and frameworks, e.g., Ruby on Rails (preferred), Django Python, JavaScript, (Angular2 with TypeScript ideal)
 *   Focus on readability, maintainability, and scalability when writing code
 *   Strong familiarity with SQL databases
