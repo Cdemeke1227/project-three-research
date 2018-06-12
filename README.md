@@ -16,8 +16,8 @@
 
 *   -Express - Node  - (WHY: Javascript, Javascript, Javascript!) I like Javascript.
 
-##I have friends that completed TopStepTrader Combines
-##I looked up a job application for TopStepTrader Full-Stack Web Developer to see Requirements, for insight.
+###     I have friends that completed TopStepTrader Combines
+####    I looked up a job application for TopStepTrader Full-Stack Web Developer to see Requirements, for insight.
 *   Experience with common web-based languages and frameworks, e.g., Ruby on Rails (preferred), Django Python, JavaScript, (Angular2 with TypeScript ideal)
 *   Focus on readability, maintainability, and scalability when writing code
 *   Strong familiarity with SQL databases
