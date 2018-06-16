@@ -45,10 +45,10 @@ Its a little hard to define the competition since the ideas is still bit abstrac
 
 ## What APIs may benefit for a stock market game? 
 (neeed to research these further)
-*   https://iextrading.com/developer/
-*   https://www.alphavantage.co/
+*   https://iextrading.com/developer/   - Says Free API
+*   https://www.alphavantage.co/        - Says Free API
 *   https://www.programmableweb.com/news/96-stocks-apis-bloomberg-nasdaq-and-etrade/2013/05/22
-*   http://www.xignite.com/
+*   http://www.xignite.com/             - I don't think this one is free
 
 ##  What industry related algorithms would we need to use?
 [Common Types of Trading Algorithms](https://blog.quantopian.com/common-types-of-trading-algorithms/)
