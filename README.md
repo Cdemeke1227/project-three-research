@@ -12,8 +12,9 @@
     - Stock Prices - can be recived in realtime and use functions to calculate each stock Value, ROI(%), and ROI($)
     - Game Metrics:     Rank, Points, etc...
         
+
     - Research for Mongoose(NoSQL) - to store Portfolio data, this will be very flat.  We can keep the portfolios seprate from the stock data. 
-        - I Mongo for portfolio becuase we do not want a predefined schema, becuase we want the user to add and remove any number of stocks at will.  We don't want a rigid structure.
+        - I suggested Mongo for portfolio becuase we do not want a predefined schema, becuase we want the user to add and remove any number of stocks at will.  We don't want a rigid structure.
         - I found the following examples:  [plum](https://github.com/jadnco/plum), [Commandiv Stack](https://www.mongodb.com/blog/post/building-a-secure-stock-trading-app-with-mongodb-atlas)
         - There isn't much on stack over flow [stackoverflow questions 1](https://dba.stackexchange.com/questions/160772/is-mongodb-a-good-fit-to-track-a-stock-portfolio)
 
@@ -126,9 +127,6 @@ Its a little hard to define the competition since the ideas is still bit abstrac
 
 ## What legalities play into a stock market game? Into a web application?
 * Why did they shutdown all those fantasy footbal leagues, they used real world data and made money?
-
-
-
 
 ### User Workflow
 * User Sign Up / Log In
