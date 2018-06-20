@@ -4,11 +4,37 @@
 --------------
 ## What tech stack should we use and why?
 *   Database and Model: Mongoose or Sequelize
-    - I suggest Mongoose(NoSQL) - to store User info and portfolio data, this will be very flat.  We can keep the portfolios seprate from the stock data. 
-        - I suggest Mongo for user info and portfolio becuase we do not want a predefined schema, becuase we want the user to add and remove any number of stocks at will.  We don't want a rigid structure.
-    - The data (stock prices etc.) being retrieved from an API may not need to be stored.  We will need access realtime values for buy/selling functions. We may only need stock data in realtime transactions, portfolio value calculating, and charting.
-        - We may need SQL if we want to store and chart historical data, unless we can find a plugin? If not we can use https://www.highcharts.com/products/highstock/
+    - Users
+    - Portfolios:       
+    - Transactions Type:     Keep it simple with just "buy" and "sell"
+    - Holdings                   
+    - Stock Information
+    - Stock Prices - can be recived in realtime and use functions to calculate each stock Value, ROI(%), and ROI($)
+    - Game Metrics:     Rank, Points, etc...
         
+    - Research for Mongoose(NoSQL) - to store Portfolio data, this will be very flat.  We can keep the portfolios seprate from the stock data. 
+        - I Mongo for portfolio becuase we do not want a predefined schema, becuase we want the user to add and remove any number of stocks at will.  We don't want a rigid structure.
+        - I found the following examples:  [plum](https://github.com/jadnco/plum), [Commandiv Stack](https://www.mongodb.com/blog/post/building-a-secure-stock-trading-app-with-mongodb-atlas)
+        - There isn't much on stack over flow [stackoverflow questions 1](https://dba.stackexchange.com/questions/160772/is-mongodb-a-good-fit-to-track-a-stock-portfolio)
+
+    - Research for Sequlize(SQL)
+        - This can work if we have a seperate tranaction table for every user.  Functions would have to use realtime data and these tables to calculate portfolio values.
+        - We can create tables for Users, All Stocks, Stock Price, Transactions(each user get own transactions table), Holdings, Game Metrics.
+        - I had a hard time finding examples of thie implemention [Better-Future](https://github.com/saravena/Better-Future)
+        
+
+    - The data (stock prices etc.) being retrieved from an API may not need to be stored.  We will need access realtime values for buy/selling functions. We may only need stock data in realtime transactions, portfolio value calculating, and charting.
+    - We may need SQL if we want to store and chart historical data, unless we can find a plugin? If not we can use https://www.highcharts.com/products/highstock/ or other products.
+
+*   API and Methods
+    -   GET, POST, DELETE  /api/users  (I added delete b/c of GDPR)
+    -   GET, PUT,   /api/users/:id
+    -   GET, POST   /api/portfolios
+    -   GET          /api/transctions
+    -   GET, POST   /api/transctions/:id
+    -   GET, POST   /api/portfolios/:id/transctions
+    -   GET, PUT   /api/users/game
+
 
 *   JavaScript framework - React.JS
     - Will need reusable components, virtual DOM, developer tools.
@@ -100,3 +126,12 @@ Its a little hard to define the competition since the ideas is still bit abstrac
 
 ## What legalities play into a stock market game? Into a web application?
 * Why did they shutdown all those fantasy footbal leagues, they used real world data and made money?
+
+
+
+
+### User Workflow
+* User Sign Up / Log In
+* User gets to start 10,000 
+* If user starts to loose money they can get loans from other users/friends
+* 
