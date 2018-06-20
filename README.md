@@ -27,7 +27,7 @@
     - The data (stock prices etc.) being retrieved from an API may not need to be stored.  We will need access realtime values for buy/selling functions. We may only need stock data in realtime transactions, portfolio value calculating, and charting.
     - We may need SQL if we want to store and chart historical data, unless we can find a plugin? If not we can use https://www.highcharts.com/products/highstock/ or other products.
 
-*   API and Methods
+*   API
     -   GET, POST, DELETE  /api/users  (I added delete b/c of GDPR)
     -   GET, PUT,   /api/users/:id
     -   GET, POST   /api/portfolios
@@ -35,6 +35,16 @@
     -   GET, POST   /api/transctions/:id
     -   GET, POST   /api/portfolios/:id/transctions
     -   GET, PUT   /api/users/game
+
+*   Methods and Funcions
+    -   Grab current price and calculate value of a single stock holding
+    -   Grab transaction data and current value and calculate ROI (%, $) of a single stock holding
+    -   Grab values of all holding and calculate total value of portfolio
+    -   Grab total values of all portfolos and rank them and assign rankings
+    -   Track how much money user has left to spend on buying stock
+    -   Check if user has enough money for a requested transacation
+
+
 
 
 *   JavaScript framework - React.JS
