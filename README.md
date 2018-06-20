@@ -10,8 +10,15 @@
     - Holdings                   
     - Stock Information
     - Stock Prices - can be recived in realtime and use functions to calculate each stock Value, ROI(%), and ROI($)
+
+*   Data unrelated to stock market
     - Game Metrics:     Rank, Points, etc...
-        
+    - Friends
+    - Messaging
+    - Message Board
+    - Avatars
+    - User Customizaton
+    - Admin 
 
     - Research for Mongoose(NoSQL) - to store Portfolio data, this will be very flat.  We can keep the portfolios seprate from the stock data. 
         - I suggested Mongo for portfolio becuase we do not want a predefined schema, becuase we want the user to add and remove any number of stocks at will.  We don't want a rigid structure.
@@ -44,6 +51,8 @@
     -   Track how much money user has left to spend on buying stock
     -   Check if user has enough money for a requested transacation
 
+*   AJAX or API calls
+    -   GET realtime stock data
 
 
 
