@@ -3,45 +3,43 @@
 # Tech Questions
 --------------
 ## What tech stack should we use and why?
-*   Database and Model: Mongoose or Sequelize
-    - Users
-    - Portfolios:       
-    - Transactions Type:     Keep it simple with just "buy" and "sell"
-    - Holdings                   
-    - Stock Information
-    - Stock Prices - can be recived in realtime and use functions to calculate each stock Value, ROI(%), and ROI($)
-
-*   Data unrelated to stock market
-    - Game Metrics:     Rank, Points, etc...
-    - Friends
-    - Messaging
-    - Message Board
-    - Avatars
-    - User Customizaton
-    - Admin 
-
-    - Research for Mongoose(NoSQL) - to store Portfolio data, this will be very flat.  We can keep the portfolios seprate from the stock data. 
-        - I suggested Mongo for portfolio becuase we do not want a predefined schema, becuase we want the user to add and remove any number of stocks at will.  We don't want a rigid structure.
-        - I found the following examples:  [plum](https://github.com/jadnco/plum), [Commandiv Stack](https://www.mongodb.com/blog/post/building-a-secure-stock-trading-app-with-mongodb-atlas)
-        - There isn't much on stack over flow [stackoverflow questions 1](https://dba.stackexchange.com/questions/160772/is-mongodb-a-good-fit-to-track-a-stock-portfolio)
-
-    - Research for Sequlize(SQL)
+ - Research for Sequlize(SQL)
         - This can work if we have a seperate tranaction table for every user.  Functions would have to use realtime data and these tables to calculate portfolio values.
         - We can create tables for Users, All Stocks, Stock Price, Transactions(each user get own transactions table), Holdings, Game Metrics.
         - I had a hard time finding examples of thie implemention [Better-Future](https://github.com/saravena/Better-Future)
+    *   Database Tables
+        - Users
+            - name
+            - email
+            - avatar
+        - Transactions Type:     Keep it simple with just "buy" and "sell"
+            - type
+            - shares
+            - price
+            - value
+            - ticker
+        - Stock Prices - can be recived in realtime and use functions to calculate each stock Value, ROI(%), and ROI($)
+        * Will need Joins for USERS&&Transactions
+
+    *   Data Tables unrelated to stock market
+        - Game Metrics:     Rank, Points, etc...
+        - Friends
+        - Messaging
+        - Message Board
+        - Avatars
+        - User Customizaton
+        - Admin 
+
+    - Research for Mongoose(NoSQL) - to store Portfolio data, this will be very flat.  We can keep the portfolios seprate from the stock data. 
+        - I suggested Mongo for portfolio becuase we do not want a predefined schema, becuase we want the user to add and remove any number of stocks at will.  We don't want a rigid structure.
+        - I found the following examples:  [Commandiv Stack](https://www.mongodb.com/blog/post/building-a-secure-stock-trading-app-with-mongodb-atlas)
+        - There isn't much on stack over flow [stackoverflow questions 1](https://dba.stackexchange.com/questions/160772/is-mongodb-a-good-fit-to-track-a-stock-portfolio)
+
         
 
     - The data (stock prices etc.) being retrieved from an API may not need to be stored.  We will need access realtime values for buy/selling functions. We may only need stock data in realtime transactions, portfolio value calculating, and charting.
     - We may need SQL if we want to store and chart historical data, unless we can find a plugin? If not we can use https://www.highcharts.com/products/highstock/ or other products.
 
-*   API
-    -   GET, POST, DELETE  /api/users  (I added delete b/c of GDPR)
-    -   GET, PUT,   /api/users/:id
-    -   GET, POST   /api/portfolios
-    -   GET          /api/transctions
-    -   GET, POST   /api/transctions/:id
-    -   GET, POST   /api/portfolios/:id/transctions
-    -   GET, PUT   /api/users/game
 
 *   Methods and Funcions
     -   Grab current price and calculate value of a single stock holding
@@ -53,7 +51,6 @@
 
 *   AJAX or API calls
     -   GET realtime stock data
-
 
 
 *   JavaScript framework - React.JS
